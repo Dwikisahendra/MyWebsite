@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Pemanggilan file script.js -->
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/sasuke.jpg" class="dwiki" height="200px">
+            <h2 style="color:papayawhip;">My Website</h2>
+        </div>
+        <div class="nav">
+            <!-- Untuk Membuat Menu -->
+            <ul>
+                <li><a href="index.html">Home &nbsp;</a></li>
+                <li><a href="about.html">About &nbsp;</a></li>
+                <li><a href="contact.html">Contact &nbsp;</a></li>
+                <li><a href="guestbook.html">Guest Book &nbsp;</a></li>
+
+            </ul>
+        </div>
+
+        <div class="main">
+            <h2>Guest Book</h2>
+
+            <p>silahkan isi buku tamu kami</p>
+
+            <form action="#">
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text" id="Nama"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><input type="text" id="Email"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Komentar</td>
+                        <td>:</td>
+                        <td><textarea id="Komentar" cols="30" rows="10" placeholder="Masukkan Komentar anda"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                            <input type="submit" name="submit" value="simpan" onclick="return bukutamu();">
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+            <div id="list"></div>
+        </div>
+
+        <div class="footer">Copyright &copy; Dwiki Sahendra Pratama | 2020 <a href="login.html" target="_blank">Panel
+                administrator</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
